@@ -12,7 +12,30 @@
     height: 100px;
     width: 100px;
     border-radius: 40%;
+    border:none;
 }
 .buttons{
     padding-right: 8rem;
+}
+.display{
+    padding-left: 6rem;
+    display:flex;
+}
+.display-choice{
+    padding-right: 2rem;
+    display:flex;
+}
+.result-display{
+    padding:6rem;
+    
+    display:flex;
+}
+.quit{
+    padding-left:4rem;
+    
+}
+.quit-button{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
 }
