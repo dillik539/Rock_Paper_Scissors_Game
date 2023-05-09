@@ -1,0 +1,18 @@
+.container{
+    background-color: #7daeee;
+    margin: 350px;
+    height:800px;
+    border-radius: 4rem;
+}
+.button-items{
+    padding: 6rem;
+    display: flex;
+}
+.button{
+    height: 100px;
+    width: 100px;
+    border-radius: 40%;
+}
+.buttons{
+    padding-right: 8rem;
+}
