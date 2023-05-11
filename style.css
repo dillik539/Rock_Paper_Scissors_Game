@@ -12,7 +12,9 @@
     height: 100px;
     width: 100px;
     border-radius: 40%;
+    font-size: 80px;
     border:none;
+    justify-content: center;
 }
 .buttons{
     padding-right: 8rem;
@@ -38,4 +40,7 @@
     height: 120px;
     width: 120px;
     border-radius: 50%;
+    font-size: 80px;
+    border: none;
+    justify-content: center;
 }
