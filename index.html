@@ -1,58 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RockPaperScissors</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
-    <div class = 'container'>
-        <div class = 'button-items'>
-            <div class = 'buttons'>
-                <button class = 'button'>✊</button>
-            </div>
-            <div class = 'buttons'>
-                <button class = 'button'>🤚</button>
-            </div>
-            <div class = 'buttons'>
-                <button class = 'button'>✌</button>
-            </div>
+    <div class="wrapper">
+        <div class="buttons">
+            <button class="rpsButton" value="Rock">✊</button>
+            <button class="rpsButton" value="Paper">🤚</button>
+            <button class="rpsButton" value="Scissors">✌</button>
         </div>
-        <div class = 'display'>
-            <div class = 'display-choice'>
-                <label for="">Your Choice:</label>
-                <input type="text">
-            </div>
-            <div class = 'display-choice'>
-                 <label for="">Computer Choice:</label>
-                 <input type="text">
-            </div>
-        </div>
-        <div class = 'result-display'>
-            <div >
-                <label for="">Result:</label>
-                <input type="text">
-            </div>
-            <div>
-                <div>
-                    <label for="">Total Score</label>
-                </div>
-                <div>
-                    <label for="">You:</label>
-                    <input type="text">
-                </div>
-                <div>
-                    <label for="">Computer:</label>
-                    <input type="text">
-                </div>
-            </div>
-        </div>
-        <div class = 'quit'>
-            <button class = 'quit-button'>🔴</button>
+        <div class="resultContainer">
+            <div id="player-score"></div>
+            <div id="hands"></div>
+            <div id="result"></div>
+            <button id='endGameButton'>🔴</button>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>
