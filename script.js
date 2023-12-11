@@ -8,7 +8,7 @@
  * This function gets the random choice of the computer and returns one of the choices
  * of "Rock", "Paper", or "Scissors"
  */
-function getComputerChoice(){
+const getComputerChoice = () => {
   const choice = ['Rock', 'Paper', 'Scissors']
   const randomNumber = Math.floor(Math.random() * 3)
   return choice[randomNumber]
@@ -23,7 +23,7 @@ function getComputerChoice(){
     *  and returns the score based on these picks. Also updates the total scores.
  */
 
-function getResult(playerChoice, computerChoice) {
+const getResult = (playerChoice, computerChoice) => {
   let score;
   if(playerChoice === computerChoice){
     score = 0
@@ -53,7 +53,7 @@ function getResult(playerChoice, computerChoice) {
  * shows if it is a draw, win, or loss based on the score. If score = -1, it is a loss.
  * If it is 1, it is a win, and if 0 it is a tie.
  */
-function showResult(score, playerChoice, computerChoice) {
+const showResult = (score, playerChoice, computerChoice) => {
 
   let resultDiv = document.getElementById('result')
   let handsDiv = document.getElementById('hands')
@@ -74,7 +74,7 @@ function showResult(score, playerChoice, computerChoice) {
  * @param playerChoice 
  * This function displays the result based on which button is clicked.
  */
-function onClickRPS(playerChoice) {
+const onClickRPS = (playerChoice) => {
   const computerChoice = getComputerChoice()
   const score = getResult(playerChoice.value, computerChoice)
   showResult(score,playerChoice.value, computerChoice)
@@ -84,7 +84,7 @@ function onClickRPS(playerChoice) {
  * This function listens for the click from the user and performed associated tasks once
  * the click is detected.
  */
-function playGame() {
+const playGame= () => {
   //This selects all of the three buttons
     const rpsBtns = document.querySelectorAll('.rpsButton')
     rpsBtns.forEach(btn =>{
@@ -98,7 +98,7 @@ function playGame() {
 /**
  * This function clears all the text and scores from the screen
  */
-function endGame() {
+const endGame = () => {
     let resultDiv = document.getElementById('result')
     let handsDiv = document.getElementById('hands')
     let playerScoreDiv = document.getElementById('player-score')
